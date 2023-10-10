@@ -6,6 +6,12 @@ function Form() {
     e.preventDefault();
 
     setTask("");
+
+    const newTask = {
+      task,
+    };
+
+    console.log(newTask);
   }
   return (
     <form className="form" onSubmit={formHandle}>
