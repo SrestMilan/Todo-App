@@ -24,3 +24,38 @@ p {
   margin-left: 1.5em;
   color: rgb(255, 255, 255);
 }
+
+.form {
+  margin: auto;
+  margin-top: 5em;
+  width: 25%;
+  height: 5em;
+}
+
+input {
+  margin-left: 5em;
+  height: 3em;
+  width: 50%;
+  font-size: 30px;
+  border-radius: 2%;
+  border-style: none;
+}
+input,
+button {
+  background-color: #ffebb3;
+  color: #5a3e2b;
+  font-family: inherit;
+  border: none;
+  border-radius: 10rem;
+  padding: 1.2rem 3.2rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.form button {
+  width: 20%;
+  text-transform: uppercase;
+  background-color: #76c7ad;
+  margin-left: 20px;
+}
