@@ -1,7 +1,12 @@
 function Item({ listItem }) {
   return (
     <div className="taskList">
-      <p>{listItem.task}</p>
+      <li>
+        <div className="items">
+          <span>{listItem.task}</span>
+          <button className="delete">❌</button>
+        </div>
+      </li>
     </div>
   );
 }

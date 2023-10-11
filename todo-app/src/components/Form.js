@@ -9,6 +9,7 @@ function Form({ onAddTask }) {
 
     const newTask = {
       task,
+      id: Date.now(),
     };
 
     onAddTask(newTask);
@@ -20,7 +21,7 @@ function Form({ onAddTask }) {
       <div>
         <input
           type="text"
-          placeholder="add task"
+          placeholder={task}
           value={task}
           onChange={(texts) => setTask(texts.target.value)}
         />
