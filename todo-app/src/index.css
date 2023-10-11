@@ -10,33 +10,35 @@ body {
 
 .head {
   margin: auto;
-  margin-top: 20em;
+  margin-top: 10em;
   width: 20%;
 }
 
 img {
   margin-left: 10em;
   margin-right: auto;
+  width: 35%;
 }
 
 p {
-  font-size: 4.5em;
-  margin-left: 1.5em;
+  font-size: 2em;
+  margin-left: 2.5em;
   color: rgb(255, 255, 255);
 }
 
 .form {
   margin: auto;
   margin-top: 1.5em;
-  width: 25%;
+  width: 40%;
   height: 7.5em;
 }
 
 input {
   margin-top: 0.5em;
-  margin-left: 5em;
-  height: 3.5em;
-  width: 50%;
+  margin-left: 7em;
+  height: 1.5em;
+  width: 40%;
+  padding: 1.2rem 3.2rem;
   font-size: 30px;
   border-style: none;
 }
@@ -47,7 +49,6 @@ button {
   font-family: inherit;
   border: none;
   border-radius: 2rem;
-  padding: 1.2rem 3.2rem;
   font-weight: 700;
   cursor: pointer;
 }
@@ -58,5 +59,21 @@ button {
   background-color: #76c7ad;
   margin-left: 25px;
   font-size: 1.8rem;
-  height: 3em;
+  height: 1.5em;
+  margin-top: 0.5em;
+}
+
+.taskList {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5em;
+  width: 20%;
+  height: 2em;
+
+  list-style-type: none;
+}
+
+li {
+  list-style-type: none;
+  text-align: center;
 }

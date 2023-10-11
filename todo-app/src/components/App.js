@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 import Form from "./Form";
-import ListItem from "./ListItem";
+import PackingList from "./PackingList";
 export default function App() {
+  const [taskList, setTaskList] = useState([]);
+
+  function addTask(task) {
+    setTaskList((taskData) => [...taskList, task]);
+  }
+
   return (
     <>
       <Header />
-      <Form />
-      <ListItem />
+      <Form onAddTask={addTask} />
+      <PackingList taskList={taskList} />
     </>
   );
 }

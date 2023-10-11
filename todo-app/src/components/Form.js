@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Form() {
+function Form({ onAddTask }) {
   const [task, setTask] = useState("");
   function formHandle(e) {
     e.preventDefault();
@@ -10,6 +10,8 @@ function Form() {
     const newTask = {
       task,
     };
+
+    onAddTask(newTask);
 
     console.log(newTask);
   }
