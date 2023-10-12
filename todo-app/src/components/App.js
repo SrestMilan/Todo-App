@@ -15,6 +15,10 @@ export default function App() {
     setTaskList((taskList) => taskList.filter((task) => task.id !== id));
   }
 
+  // handling completing task
+  function handleCompletedTask(id){
+    setTaskList((taskList)=>taskList.map((taskPack)=>taskPack.id===id?{...taskPack,
+
   return (
     <>
       <Header />
