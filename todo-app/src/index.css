@@ -64,28 +64,42 @@ button {
   color: #000;
 }
 
-.taskList {
-  margin-left: 52em;
-  margin-right: auto;
-  width: 21%;
-  height: 4em;
+.taskItem {
+  position: relative;
+  width: 450px;
+  height: 60px;
+  left: 810px;
+  background-color: rgb(213, 213, 222);
 }
 
-.taskList li {
-  list-style-type: none;
+.child {
+  position: absolute;
+}
+
+.child-2 {
+  top: 17px;
+  left: 200px;
   font-size: 30px;
-  text-align: center;
 }
 
-.items {
-  height: 50px;
-  background-color: #aadbef;
+.child-3 {
+  top: 17px;
+  left: 340px;
 }
 
-.delete {
-  width: 4.5em;
-  height: 30px;
-  margin-top: 10px;
-  margin-left: 15em;
+.taskItem:hover {
+  background-color: white;
+}
+
+.taskItem input {
+  margin-left: 100px;
+  margin-top: 17px;
+  width: 30px;
+  height: 35px;
+}
+
+.taskItem .child-3 button {
+  width: 100px;
+  height: 35px;
   background-color: black;
 }
