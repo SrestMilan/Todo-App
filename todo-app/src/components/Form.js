@@ -10,6 +10,7 @@ function Form({ onAddTask }) {
     const newTask = {
       task,
       id: Date.now(),
+      completed: false,
     };
 
     onAddTask(newTask);

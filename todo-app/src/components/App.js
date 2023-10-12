@@ -16,14 +16,24 @@ export default function App() {
   }
 
   // handling completing task
-  function handleCompletedTask(id){
-    setTaskList((taskList)=>taskList.map((taskPack)=>taskPack.id===id?{...taskPack,
-
+  function handleCompletedItems(id) {
+    setTaskList((taskList) =>
+      taskList.map((taskCompleted) =>
+        taskCompleted.id === id
+          ? { ...taskCompleted, completed: !taskCompleted.completed }
+          : taskCompleted
+      )
+    );
+  }
   return (
     <>
       <Header />
       <Form onAddTask={addTask} />
-      <PackingList taskList={taskList} onDeleteTask={handleDeleteTask} />
+      <PackingList
+        taskList={taskList}
+        onDeleteTask={handleDeleteTask}
+        onHandleCompletedTask={handleCompletedItems}
+      />
     </>
   );
 }

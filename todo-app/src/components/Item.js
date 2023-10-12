@@ -1,9 +1,19 @@
-function Item({ listItem, onDeleteTask }) {
+function Item({ listItem, onDeleteTask, onHandleCompletedTask }) {
   return (
     <div className="taskList">
       <li>
         <div className="items">
-          <span>{listItem.task}</span>
+          <input
+            type="checkbox"
+            value={listItem.completed}
+            onChange={() => onHandleCompletedTask(listItem.id)}
+          />
+          <span
+            style={listItem.completed ? { textDecoration: "line-through" } : {}}
+          >
+            {listItem.task}
+          </span>
+
           <button className="delete" onClick={() => onDeleteTask(listItem.id)}>
             ❌
           </button>
