@@ -20,6 +20,15 @@ function Item({ listItem, onDeleteTask, onHandleCompletedTask }) {
           <button className="delete" onClick={() => onDeleteTask(listItem.id)}>
             ❌
           </button>
+
+          <div className="child child-4">
+            <p>
+              Note:
+              {listItem.completed
+                ? " task is completed"
+                : "task is incompleted"}
+            </p>
+          </div>
         </div>
       </div>
     </>
